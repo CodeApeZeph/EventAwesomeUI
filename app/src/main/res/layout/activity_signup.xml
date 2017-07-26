@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/field"
                 android:drawableRight="@drawable/ic_portrait_black_24dp"
-                android:text="full name"
+                android:hint="full name"
                 android:textColor="#6e6e6e" />
         </android.support.design.widget.TextInputLayout>
 
@@ -57,7 +57,7 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/field"
                 android:drawableRight="@drawable/ic_email_black_24dp"
-                android:text="email"
+                android:hint="email"
                 android:textColor="#6e6e6e" />
         </android.support.design.widget.TextInputLayout>
 
@@ -74,7 +74,7 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/field"
                 android:drawableRight="@drawable/ic_lock_black_24dp"
-                android:text="password"
+                android:hint="password"
                 android:textColor="#6e6e6e" />
         </android.support.design.widget.TextInputLayout>
 
@@ -91,7 +91,7 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/field"
                 android:drawableRight="@drawable/ic_card_giftcard_black_24dp"
-                android:text="birthday"
+                android:hint="birthday"
                 android:textColor="#6e6e6e" />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
@@ -103,6 +103,7 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/create"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#d667cd"
