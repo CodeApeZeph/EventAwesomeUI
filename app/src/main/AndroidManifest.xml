@@ -18,10 +18,7 @@
         </activity>
         <activity android:name=".Signup" />
         <activity android:name=".Walkthrough" />
-        <activity
-            android:name=".Home"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".Home"></activity>
     </application>
 
 </manifest>
