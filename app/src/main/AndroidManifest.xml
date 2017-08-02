@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Signup" />
         <activity android:name=".Walkthrough" />
-        <activity android:name=".Home"></activity>
+        <activity android:name=".Home" />
+        <activity android:name=".NavigationDrawer"></activity>
     </application>
 
 </manifest>

@@ -117,7 +117,7 @@ public class Walkthrough extends AppCompatActivity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(getApplicationContext(), Home.class));
+        startActivity(new Intent(getApplicationContext(), NavigationDrawer.class));
         finish();
     }
 
