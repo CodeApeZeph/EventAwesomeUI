@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.sefu.eventawesomeui.R;
 import com.example.sefu.eventawesomeui.model.DataLeftNavigationDrawerModel;
@@ -19,13 +20,22 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
 
     public ArrayList<DataLeftNavigationDrawerModel> dataSet;
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView navIcon;
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
             this.navIcon = (ImageView) itemView.findViewById(R.id.iconLeft);
+            navIcon.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(v.getContext(), "position:" + getPosition(), Toast.LENGTH_LONG).show();
+
+
+
         }
     }
 

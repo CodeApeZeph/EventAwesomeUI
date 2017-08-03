@@ -1,11 +1,13 @@
 package com.example.sefu.eventawesomeui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.example.sefu.eventawesomeui.adapter.NavigationDrawerAdapter;
 import com.example.sefu.eventawesomeui.model.DataLeftNavigationDrawerModel;
@@ -25,11 +27,23 @@ public class NavigationDrawer extends AppCompatActivity {
     static View.OnClickListener myOnClickListener;
     private static ArrayList<Integer> removedItems;
 
+    ImageView closeNavigator;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_navigation_drawer);
 
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+
+        setContentView(R.layout.activity_navigation_drawer);
+        closeNavigator = (ImageView) findViewById(R.id.closeNavigator);
+        closeNavigator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent closeNavigatorIntent = new Intent(getApplicationContext(), Home.class);
+                startActivity(closeNavigatorIntent);
+            }
+        });
 
         //drawer left
 

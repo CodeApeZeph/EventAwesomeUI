@@ -12,6 +12,9 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+
         setContentView(R.layout.activity_login);
         signUp = (Button) findViewById(R.id.signup);
         signUp.setOnClickListener(new View.OnClickListener() {
