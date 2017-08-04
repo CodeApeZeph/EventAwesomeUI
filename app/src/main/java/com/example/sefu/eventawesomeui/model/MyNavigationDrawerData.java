@@ -12,5 +12,5 @@ public class MyNavigationDrawerData {
             R.drawable.lists, R.drawable.profile,
             R.drawable.timeline, R.drawable.settings};
 
-    public static Integer[] id_ = {0, 1, 2, 3, 4, 5, 6, 7};
+    public static Integer[] id_ = {0, 1, 2, 3, 4, 5, 6, 7,8};
 }

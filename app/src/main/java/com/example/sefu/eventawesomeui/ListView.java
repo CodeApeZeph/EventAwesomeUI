@@ -1,15 +1,13 @@
 package com.example.sefu.eventawesomeui;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-public class CreateEvent extends AppCompatActivity {
+public class ListView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
-        setContentView(R.layout.activity_create_event);
+        setContentView(R.layout.activity_list_view);
     }
 }

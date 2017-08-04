@@ -20,7 +20,9 @@
         <activity android:name=".Walkthrough" />
         <activity android:name=".Home" />
         <activity android:name=".NavigationDrawer" />
-        <activity android:name=".CreateEvent"></activity>
+        <activity android:name=".CreateEvent" />
+        <activity android:name=".ListView" />
+        <activity android:name=".GroupView"></activity>
     </application>
 
 </manifest>
